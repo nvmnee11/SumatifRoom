@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ccc5b9"
+    tools:context=".KaryawanAdapter">
+
+
+    <ImageView
+        android:id="@+id/imgbg"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tvimg_removebg_preview_removebg_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="ID KARYAWAN"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/imgbg"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imgbg"
+        app:layout_constraintTop_toTopOf="@+id/imgbg" />
+
+    <TextView
+        android:id="@+id/tvnm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="NAMA"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/imgbg"
+        app:layout_constraintStart_toStartOf="@+id/imgbg"
+        app:layout_constraintTop_toBottomOf="@+id/tvid" />
+
+    <ImageView
+        android:id="@+id/imgedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/ic_edit"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbg"
+        app:layout_constraintEnd_toStartOf="@+id/imgdel"
+        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintStart_toStartOf="@+id/imgbg" />
+
+    <ImageView
+        android:id="@+id/imgdel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="228dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgedit"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
